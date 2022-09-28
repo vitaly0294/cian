@@ -1,0 +1,173 @@
+html {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  max-height: 100px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes preloader-animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px dashed #8EA49F;
+
+  animation: preloader-animate 1s infinite linear;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+}
+
+.form {
+  padding: 5px 0;
+  width: 400px;
+  height: 200px;
+
+  background: #F5F5F5;
+  border: 1px solid #000;
+  border-radius: 11px;
+
+  overflow: auto;
+}
+
+.header {
+  margin: 0 9px 0 9px;
+
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.list {
+  margin-left: 5px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.button {
+  position: relative;
+  margin: 0 9px 0 9px;
+  padding: 0;
+  border: none;
+
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: inherit;
+
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  padding-top: 24px;
+  margin-bottom: 21px;
+}
+
+.check {
+  margin-right: 9px;
+  width: 31px;
+  height: 35px;
+}
+
+.check_passed {
+  background: url('./rectangle.png') no-repeat center center;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input {
+  margin-right: 7px;
+  padding: 0 5px;
+  width: 219px;
+  height: 35px;
+
+  font-size: 12px;
+  line-height: 15px;
+
+  background: #FEF9F9;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.top {
+  top: -14px;
+  display: flex;
+  justify-content: space-between;
+  width: 213px;
+}
+
+.bottom {
+  bottom: -13px;
+  width: 219px;
+}
+
+.select {
+  padding-left: 7px;
+  width: 90px;
+  height: 35px;
+
+  font-size: 12px;
+  line-height: 15px;
+
+  background: #FEF9F9 url('./arrow.png') no-repeat right 7px center;
+  appearance: none;
+
+  cursor: pointer;
+}
+
