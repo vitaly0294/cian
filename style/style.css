@@ -118,7 +118,7 @@ li {
 }
 
 .check_passed {
-  background: url('./rectangle.png') no-repeat center center;
+  background: url('../assets/rectangle.png') no-repeat center center;
 }
 
 .input-wrap {
@@ -166,7 +166,7 @@ li {
   font-size: 12px;
   line-height: 15px;
 
-  background: #FEF9F9 url('./arrow.png') no-repeat right 7px center;
+  background: #FEF9F9 url('../assets/arrow.png') no-repeat right 7px center;
   border: 1px solid #000;
   appearance: none;
 
