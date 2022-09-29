@@ -135,6 +135,7 @@ li {
   line-height: 15px;
 
   background: #FEF9F9;
+  border: 1px solid #000;
 }
 
 .label {
@@ -166,6 +167,7 @@ li {
   line-height: 15px;
 
   background: #FEF9F9 url('./arrow.png') no-repeat right 7px center;
+  border: 1px solid #000;
   appearance: none;
 
   cursor: pointer;
